@@ -55,8 +55,10 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>LC_PLATFORM_WINDOWS;LC_BUILD_DLL;</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LE_PLATFORM_WINDOWS;LE_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Ludicrous\ThirdParty\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -69,8 +71,10 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>LC_PLATFORM_WINDOWS;LC_BUILD_DLL;</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LE_PLATFORM_WINDOWS;LE_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Ludicrous\ThirdParty\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -84,9 +88,12 @@
     <ClInclude Include="Source\Ludicrous\Application.h" />
     <ClInclude Include="Source\Ludicrous\Core.h" />
     <ClInclude Include="Source\Ludicrous\EntryPoint.h" />
+    <ClInclude Include="Source\Ludicrous\Log.h" />
+    <ClInclude Include="Source\Ludicrous\LogMacros.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Ludicrous\Application.cpp" />
+    <ClCompile Include="Source\Ludicrous\Log.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

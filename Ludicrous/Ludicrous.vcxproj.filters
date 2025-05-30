@@ -27,9 +27,18 @@
     <ClInclude Include="Source\Ludicrous\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Ludicrous\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Ludicrous\LogMacros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Ludicrous\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Ludicrous\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
