@@ -1,0 +1,3 @@
+[submodule "Ludicrous/Vendors/spdlog"]
+	path = Ludicrous/Vendors/spdlog
+	url = https://github.com/gabime/spdlog
